@@ -1,13 +1,14 @@
 .navbar {
     width: 100%;
     height: 60px;
-    background-color: rgb(13, 10, 10); /* Couleur de fond de la navbar */
+    background-color: rgba(13, 10, 10, 0); /* Couleur de fond de la navbar */
     display: flex;
     align-items: center;
     justify-content: space-between;
     
     box-shadow: rgba(0, 0, 0, 0.526) 0px 3px 8px;    
     position: fixed;
+    z-index: 5;
     .title_navbar {
         color: white; /* Couleur du texte */
         margin-left: 20px;
@@ -34,7 +35,7 @@
                 color: rgb(255, 255, 255); /* Couleur initiale du texte des liens */
                 
                 &:hover {
-                    color: rgb(13, 10, 10); /* Couleur du texte des liens au survol */
+                    color: rgba(255, 255, 255, 0); /* Couleur du texte des liens au survol */
                 }
 
                 &:before {

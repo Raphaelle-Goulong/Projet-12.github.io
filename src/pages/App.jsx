@@ -4,6 +4,8 @@ import '../sass/App.scss'
 import Footer from '../components/Footer'
 import Home from './Home'
 import Error from './Error'
+import Presentation from '../components/Presentation'
+import Contact from '../components/Contact'
 import Header from '../components/Header'
 
 

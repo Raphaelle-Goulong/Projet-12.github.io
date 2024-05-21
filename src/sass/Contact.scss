@@ -1,0 +1,57 @@
+.container_section_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+    background-image: url(../assets/images/nikolay-u76CN5rZeOU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+       background-color: rgba(0, 0, 0, 0.199);
+       background-blend-mode: screen;
+           
+
+    // filter: brightness(30%);
+    .content_section_contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        z-index: 30;
+        // background-color: red;
+        // backdrop-filter: blur(5px);
+        .title_section_contact {
+            display: flex;
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 3px 3px 2px rgb(121, 118, 119);
+            backdrop-filter: blur(5px);
+            font-family: 'Unbounded', sans-serif;
+            
+        } 
+        .btn_contact{
+                width: 150px;
+                height: 50px;
+                border-radius: 25px;
+                color: rgb(0, 0, 0);
+                border: none;
+                font-family: 'Unbounded', sans-serif;
+                font-size: 0.9em;
+                background: linear-gradient(45deg, #ffffff, #ffffff); // Dégradé de couleurs
+            cursor: pointer;
+            
+            transition: transform 0.3s;
+            &:hover {
+                background: linear-gradient(to right, #ff8a00, #e52e71); // Inverser le dégradé au survol
+                color: rgb(255, 251, 251);
+                box-shadow: rgb(102, 101, 101) 0px 4px 12px;
+                transform: scale(1.1); 
+                
+            }
+
+            
+                
+        }
+    }
+}

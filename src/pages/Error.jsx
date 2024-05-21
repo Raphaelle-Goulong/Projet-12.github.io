@@ -9,16 +9,16 @@ function Error() {
             <div className="container-error">
                 
                 {/* Titre de l'erreur */}
-                <div className="section-Title-error">
-                    <h2 className="loading">4</h2>
+                <div className="section-Title-error bounce-in-right">
+                    <h2 className="loading hinge">4</h2>
                     <h2 className="loading">0</h2>
                     <h2 className="loading">4</h2>
                 </div>
                 {/* Message d'erreur */}
-                <p className="Text-error gradient">Oups! La page que vous demandez n'existe pas.</p>
+                <p className="Text-error gradient bounce-in-right">Oups! La page que vous demandez n'existe pas.</p>
                 {/* Lien pour retourner à la page d'accueil */}
                 
-                <Link to="/" className="Link-error" >Retourner sur la page d’accueil</Link>
+                <Link to="/" className="Link-error  bounce-in-right " >Retourner sur la page d’accueil</Link>
             </div> 
        
        

@@ -17,7 +17,7 @@
         font-weight: 700;
         margin: 20px;
         @media (min-width: 320px) and (max-width: 768px) {
-            font-size: 9em;
+            font-size: 6em;
             margin: 0px;
         }
     }
@@ -25,7 +25,8 @@
         font-size: 3em;
         margin: 50px;
         @media (min-width: 320px) and (max-width: 768px) {
-            font-size: 1.5em;
+            font-size: 1.4em;
+            margin-top: 100px;
         }
     }
     .gradient {
@@ -38,10 +39,9 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    //animation chargement
     .loading {
-        // font-family: $fontText;
-        // font-size: 1.5rem;
-        margin: 5px;
+        margin: 2px;
         animation-name: loading;
         animation: loading 2.0s linear infinite;
     }
@@ -55,7 +55,20 @@
     .loading:nth-child(3) {
         animation-delay: 0.5s;
     }
-    
+    //animation chargement
+
+    //animation au chargement de la page 
+
+    .bounce-in-right {
+        animation: bounce-in-right 2.5s ease-in-out ;
+    }
+    //animation au chargement de la page 
+    //animation balancement du chiffre 4
+    .hinge {
+        animation: hinge 5.0s ease infinite;
+      }
+    //animation balancement du chiffre 4
+
     .Link-error {
         margin: 50px;
         font-size: 1.2em;
@@ -67,17 +80,15 @@
         text-decoration: none;
         box-shadow: rgb(102, 101, 101) 0px 4px 12px;
         &:hover {
-            transform: scale(1.1); /* Grossit le lien au survol */
-            // background: linear-gradient(to right, #00bfff, #00ff00); /* Dégradé de bleu à vert */
-            // -webkit-background-clip: text; /* Permet de clipper le dégradé sur le texte */
-            // background-clip: text;
-            // -webkit-text-fill-color: transparent;
+            transform: scale(1.1); 
             z-index: 2;
         }
         // color: #f66c6c;
         @media (min-width: 320px) and (max-width: 768px) {
             font-size: 1.1em;
             margin-top: 70px;
+            width: 200px;
+            padding: 8px;
         }
     }
 }
