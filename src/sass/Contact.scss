@@ -7,9 +7,8 @@
     background-image: url(../assets/images/nikolay-u76CN5rZeOU-unsplash.jpg);
     background-size: cover;
     background-position: center;
-       background-color: rgba(0, 0, 0, 0.199);
-       background-blend-mode: screen;
-           
+    background-color: rgba(0, 0, 0, 0.199);
+    background-blend-mode: screen;
 
     // filter: brightness(30%);
     .content_section_contact {
@@ -19,6 +18,7 @@
         gap: 50px;
         align-items: center;
         z-index: 30;
+        
         // background-color: red;
         // backdrop-filter: blur(5px);
         .title_section_contact {
@@ -28,30 +28,120 @@
             text-shadow: 3px 3px 2px rgb(121, 118, 119);
             backdrop-filter: blur(5px);
             font-family: 'Unbounded', sans-serif;
-            
-        } 
-        .btn_contact{
-                width: 150px;
-                height: 50px;
-                border-radius: 25px;
-                color: rgb(0, 0, 0);
-                border: none;
-                font-family: 'Unbounded', sans-serif;
-                font-size: 0.9em;
-                background: linear-gradient(45deg, #ffffff, #ffffff); // Dégradé de couleurs
+        }
+        .btn_contact {
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+            color: rgb(0, 0, 0);
+            border: none;
+            font-family: 'Unbounded', sans-serif;
+            font-size: 0.9em;
+            background: linear-gradient(45deg, #ffffff, #ffffff); // Dégradé de couleurs
             cursor: pointer;
-            
             transition: transform 0.3s;
             &:hover {
-                background: linear-gradient(to right, #ff8a00, #e52e71); // Inverser le dégradé au survol
+                background: linear-gradient(to right, #ff8a00, #e52e71);
                 color: rgb(255, 251, 251);
                 box-shadow: rgb(102, 101, 101) 0px 4px 12px;
-                transform: scale(1.1); 
-                
+                transform: scale(1.1);
             }
+        }
+    }
+    .contact_file_section {
+        width: 50%;
+        // height: 600px;
+        background-color: rgba(146, 145, 145, 0.184);
+        padding: 20px;
+        color: white;
+        font-family: 'Unbounded', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        backdrop-filter: blur(5px);
+        gap: 50px;
+        padding: 50px 0px;
+        border-radius: 15px;
 
+        h3 {
+            font-size: 2.0em;
             
+        }
+        .contact_social_media{
+            display: flex;
+            // background-color: #ff8a00;
+            gap: 70px;
+            .link_social{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 50px;
+                background-color: #000000cc;
+                border: 1px solid #ff8a00;
                 
+                &:hover {
+                background-color: #ffffffd9;
+
+                    // background: linear-gradient(to right, #ff8a00, #e52e71);
+                    color: rgb(7, 7, 7);
+                    box-shadow: rgb(102, 101, 101) 0px 4px 12px;
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .form_section_contact {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            input{
+                font-family: 'Unbounded', sans-serif;
+            }
+            .input_contact {
+                width: 300px;
+                height: 30px;
+                font-family: 'Unbounded', sans-serif;       
+                background-color: #cc282800;
+                border: none;
+                border-bottom: 1px solid;
+                color: white;
+                backdrop-filter: blur(6px);
+                border-radius: 5px;
+                padding: 5px;
+            }
+            ::placeholder {
+                color: #ffffff; /* Choisissez la couleur que vous souhaitez */
+                opacity: 1; /* Assurez-vous que l'opacité est à 1 pour garantir que la couleur est pleinement visible */
+            }
+            input:focus,
+            textarea:focus {
+                outline: none; /* Enlève l'outline par défaut */
+                border: none; /* Enlève la bordure */
+                font-family: 'Unbounded', sans-serif;
+                background: rgba(8, 8, 8, 0.671);
+                border-bottom: 2px solid #ff8a00;
+            }
+            #message{
+                width: 300px;
+                height: 150px;
+            }
+            #btn_send{
+                width: 310px;
+                &:hover {
+                    background: linear-gradient(to right, #ff8a00, #e52e71);
+                        // background: linear-gradient(to right, #ff8a00, #e52e71);
+                        color: rgb(255, 251, 251);
+                        box-shadow: rgb(102, 101, 101) 0px 4px 12px;
+                        // transform: scale(1.1);
+                        
+                    }
+
+            }
         }
     }
 }
