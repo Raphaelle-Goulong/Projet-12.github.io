@@ -35,7 +35,7 @@
                 color: rgb(255, 255, 255); /* Couleur initiale du texte des liens */
                 
                 &:hover {
-                    color: rgba(255, 255, 255, 0); /* Couleur du texte des liens au survol */
+                    color: rgba(255, 255, 255, 0.26); /* Couleur du texte des liens au survol */
                 }
 
                 &:before {
