@@ -41,3 +41,25 @@
       margin-left: 0%;
     }
   }
+  
+ // Définition de l'animation fadeIn pour l'apparition des lettres
+@keyframes fadeIn {
+  from {
+      opacity: 0; // Commencer avec une opacité de 0
+  }
+  to {
+      opacity: 1; // Terminer avec une opacité de 1
+  }
+}
+
+// Définition de l'animation roll-up pour l'apparition des lettres
+@keyframes roll-up {
+  from {
+      transform: translateY(100%); // Commencer en bas
+      opacity: 0; // Commencer avec une opacité de 0
+  }
+  to {
+      transform: translateY(0); // Finir à la position normale
+      opacity: 1; // Terminer avec une opacité de 1
+  }
+}

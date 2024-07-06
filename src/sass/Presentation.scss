@@ -1,8 +1,50 @@
-.container_section_presentation{
-    //background-color: red;
-    width: 100%;
-    height: 100vh;
-   background-image: url(../assets/images/shubham-dhage-MIvbZPmY9Ds-unsplash.jpg);
-   background-size: cover;  // Pour couvrir toute la section
-   background-position: center;  // Pour centrer l'image
+.container_section_presentation {
+  //background-color: red;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/images/shubham-dhage-MIvbZPmY9Ds-unsplash.jpg);
+  background-size: cover; // Pour couvrir toute la section
+  background-position: center; // Pour centrer l'image
+  color: white;
+
+  .titles_section_presentation {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      // background-color: red;
+
+      h2 {
+          font-family: "Unbounded", sans-serif;
+          // text-shadow: 3px 3px 2px rgb(121, 118, 119);
+          font-size: 3.5em;
+
+          span {
+              background: linear-gradient(to right, #ff8a00, #e52e71); /* Dégradé de couleur pour le pseudo-élément */
+              -webkit-background-clip: text; /* Permet de clipper le dégradé sur le texte */
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+          }
+      }
+
+      h3 {
+          font-family: "Mukta Vaani", sans-serif;
+          font-size: 2.5em;
+// color: #e52e71;
+          .changing-letter {
+                display: inline-block;
+                opacity: 0;
+                animation: fadeIn 1s forwards;
+                color: #ff8a00; /* Rendre le texte transparent */
+                // -webkit-text-fill-color: transparent; /* Rendre le texte transparent */
+                // background: linear-gradient(to right, #ff8a00, #e52e71); /* Dégradé de couleur pour les lettres */
+                // background-clip: text; /* Clipper le dégradé sur les lettres */
+                // -webkit-background-clip: text; /* Clipper le dégradé sur les lettres pour Webkit */
+            }
+      }
+  }
 }
+
+

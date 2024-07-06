@@ -11,7 +11,7 @@ function Header() {
                         <li className="link_section"><a href="#" alt="Accueil">Accueil</a></li>
                         <li className="link_section"><a href="#" alt="Présentation">Présentation</a></li>
                         <li className="link_section"><a href="#" alt="Compétence">Compétence</a></li>
-                        <li className="link_section"><a href="#" alt="Cv">Cv</a></li>
+                        <li className="link_section"><a href="#" alt="Portfolio">Portfolio</a></li>
                         <li className="link_section"><a href="#" alt="Contact">Contact</a></li>
                     </ul>
                 </nav>
