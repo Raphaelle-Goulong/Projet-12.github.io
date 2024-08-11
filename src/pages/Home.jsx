@@ -1,6 +1,7 @@
 import '../sass/Home.scss'
 import Contact from '../components/Contact'
 import Presentation from '../components/Presentation'
+import Portfolio from '../components/Portfolio'
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
         <section className="section_container_home">
             
         <Presentation />
+        <Portfolio />
         <Contact />
         </section>
         

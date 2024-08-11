@@ -1,0 +1,120 @@
+.section_container_portfolio {
+    position: relative; // Nécessaire pour que le pseudo-élément soit positionné correctement
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    z-index: 1;
+    // background-image: url(../assets/images/francesco-ungaro-a1EIm9HfLc4-unsplash.jpg);
+    // background-size: cover; // Pour couvrir toute la section
+    // background-position: center; // Pour centrer l'image
+    // color: white;
+    overflow: hidden;
+    background: rgb(26,44,45);
+    background: linear-gradient(90deg, rgba(26,44,45,1) 0%, rgba(30,51,52,1) 27%, rgba(19,36,41,1) 57%, rgba(12,31,38,1) 79%, rgba(7,10,9,1) 100%);
+    // Pseudo-élément pour la superposition sombre
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: inherit; // Utiliser la même image de fond
+        background-size: inherit; // Conserver les mêmes propriétés de fond
+        background-position: inherit;
+        // filter: blur(9px); // Appliquer un flou de 8px
+        // background-color: rgba(0, 0, 0, 0.647); // Couleur noire avec 50% d'opacité
+        z-index: 2; // Placer l'overlay au-dessus de l'image de fond
+    }
+
+    .container_portfolio_carousel {
+        position: relative; // Assurez-vous que les éléments enfants sont au-dessus de l'overlay
+        z-index: 3; // Placer le contenu au-dessus de l'overlay
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 560px;
+
+        .container_cards {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+
+            .cards {
+                display: flex;
+                justify-content: center;
+                object-fit: cover;
+                width: 500px;
+                height: 300px;
+                background-color: rgb(0, 255, 225);
+                border-radius: 15px;
+                position: relative;
+                z-index: 1;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            }
+            .left_cards {
+                background-color: rgb(12, 8, 146);
+                top: 50px;
+                left: 250px;
+            }
+            .middle_card {
+                width: 600px;
+                height: 400px;
+                z-index: 30;
+                background-color: rgba(255, 255, 255, 0.281);
+
+                .img_projet_center{
+                    width: 90%;
+                    object-fit: cover;
+                }
+            }
+            .right_cards {
+                background-color: rgb(255, 0, 0);
+                top: 50px;
+                right: 250px;
+                
+            }
+            .img_projets{
+                width: 90%;
+                object-fit: cover;
+            }
+        }
+        .container_cards_info {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .cards_info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 300px;
+                height: 110px;
+                background-color: rgba(186, 23, 23, 0.893);
+                border-radius: 15px;
+                margin: 30px;
+                color: white;
+                font-family: "Mukta Vaani", sans-serif;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                .text_info h4{
+                    margin: 10px 0px;
+                    font-size: 1.3rem;
+                }
+                .icon_techno i{
+                    margin: 10px 5px;
+                    font-size: 25px;
+                    color: white;
+                }
+                 a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
