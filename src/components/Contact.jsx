@@ -1,6 +1,6 @@
 import '../sass/Contact.scss'
 import '../sass/_Animation.scss'
-//import backgroundImage from '../assets/images/nikolay-u76CN5rZeOU-unsplash.jpg'
+import emailjs from 'emailjs-com';
 import { useState } from 'react'
 function Contact() {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -12,7 +12,21 @@ function Contact() {
     const closeModal = () => {
         setIsModalOpen(false)
     }
-
+    // EMAILJS
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_r2jmlmy', 'template_h29wsij', e.target, 'BHcetdTcCGR0NtCfc')
+            .then((result) => {
+                console.log(result.text);
+                alert("Message envoyé avec succès!");
+            }, (error) => {
+                console.log(error.text);
+                alert("Erreur lors de l'envoi du message.");
+            });
+    
+        e.target.reset(); // Pour réinitialiser le formulaire après l'envoi
+    }
     return (
         <>
             <section className="container_section_contact">
@@ -49,7 +63,7 @@ function Contact() {
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             </div>
-                            <form className="form_section_contact">
+                            <form className="form_section_contact" onSubmit={sendEmail}>
                                 {/* <label htmlFor="name">Nom</label> */}
                                 <input
                                     type="text"
