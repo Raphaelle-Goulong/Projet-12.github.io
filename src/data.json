@@ -2,7 +2,7 @@
 	{
 		"id": "1",
 		"title": "Booki",
-		"cover": "/images/Booki.webp",
+		"cover": "/Booki.webp",
         "liens": "https://raphaelle-goulong.github.io/Projet_3_RG.github.io",
         "description": "Site de location d'hébergement",
 		"tech": [
@@ -13,7 +13,7 @@
 	{
 		"id": "2",
 		"title": "Oh my food",
-		"cover": "/images/OhmyFood.webp",
+		"cover": "/OhmyFood.webp",
         "liens": "https://raphaelle-goulong.github.io/Projet-4.github.io/",
         "description": "Site de réservation en ligne ",
 		"tech": [
@@ -24,7 +24,7 @@
 	{
 		"id": "3",
 		"title": "Print it!",
-		"cover": "/images/PritIt.webp",
+		"cover": "/PritIt.webp",
         "liens": "https://raphaelle-goulong.github.io/projet-5.github.io/",
         "description": "Site pour une imprimerie",
 		"tech": [
@@ -36,7 +36,7 @@
 	{
 		"id": "4",
 		"title": "Sophie Bluel",
-		"cover": "/images/SophieBuel.webp",
+		"cover": "/SophieBuel.webp",
         "liens": "https://github.com/Raphaelle-Goulong/Projet-6.github.io",
         "description": "Portfolio pour une designer ",
 		"tech": [
@@ -48,7 +48,7 @@
 	{
 		"id": "5",
 		"title": "Kasa",
-		"cover": "/images/Kasa.webp",
+		"cover": "/Kasa.webp",
         "liens": "https://github.com/Raphaelle-Goulong/Projet-8.github.io",
         "description": "Site de location de logement",
 		"tech": [
@@ -59,7 +59,7 @@
 	{
 		"id": "6",
 		"title": "Nina Carducci",
-		"cover": "/images/NinaCarducci.webp",
+		"cover": "/NinaCarducci.webp",
         "liens": "https://github.com/Raphaelle-Goulong/Projet-9.github.io",
         "description": "Portfolio pour une photographe",
 		"tech": [
@@ -71,7 +71,7 @@
 	{
 		"id": "7",
 		"title": "724 Events",
-		"cover": "/images/724events.webp",
+		"cover": "/724events.webp",
         "liens": "https://github.com/Raphaelle-Goulong/Projet-10.github.io",
         "description": "Site pour une agence d'évenementiel",
 		"tech": [
@@ -82,7 +82,7 @@
 	{
 		"id": "8",
 		"title": "Projet 11",
-		"cover": "/images/Portfolio.webp",
+		"cover": "",
         "liens": "https://github.com/Raphaelle-Goulong/Projet-11.github.io",
         "description": "Votre maison loin de chez vous. ",
 		"tech": [
@@ -93,7 +93,7 @@
 	{
 		"id": "9",
 		"title": "Portfolio",
-		"cover": "/images/Portfolio.webp",
+		"cover": "/Portfolio.webp",
         "liens": "https://github.com/Raphaelle-Goulong/Projet-12.github.io",
     	"description": "Mon Portfolio",
 		"tech": [
