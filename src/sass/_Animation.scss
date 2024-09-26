@@ -1,3 +1,5 @@
+
+// page error
 @keyframes loading {
     0% {
         color: #ff8a00;
@@ -42,6 +44,11 @@
     }
   }
   
+// page error
+
+
+
+  // letter title
  // Définition de l'animation fadeIn pour l'apparition des lettres
 @keyframes fadeIn {
   from {
@@ -63,3 +70,36 @@
       opacity: 1; // Terminer avec une opacité de 1
   }
 }
+ // letter title
+
+
+
+
+//  carousel skill
+  
+@keyframes rotateCW {
+  from {
+      transform: translate3d(0px, -50%, -1px) rotate(-45deg);
+  }
+  to {
+      transform: translate3d(0px, -50%, 0px) rotate(-315deg);
+  }
+}
+@keyframes rotateCCW {
+  from {
+      transform: rotate(45deg);
+  }
+  to {
+      transform: rotate(315deg);
+  }
+}
+@keyframes pulseGlow {
+  from {
+      background-size: 60%;
+  }
+  to {
+      background-size: 100%;
+  }
+}
+//  carousel skill
+

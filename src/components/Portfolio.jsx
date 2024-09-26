@@ -47,8 +47,9 @@ function Portfolio() {
     return (
         <>
             <section className="section_container_portfolio">
-                {/* Carousel */}
+                {/* Carousel */}<h2>Portfolio</h2>
                 <div className="container_portfolio_carousel">
+                    
                     <div className="container_cards">
                         {/* left card*/}
                         <article className="cards left_cards" onClick={prevProject}>

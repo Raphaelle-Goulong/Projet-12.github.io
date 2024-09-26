@@ -25,7 +25,7 @@
     },
     {
         "id": "5",
-        "tech": "react.webp",
+        "tech": "fa-brands fa-react",
         "title": "React",
         "description": "React est une bibliothèque JavaScript utilisée pour la création d'interfaces utilisateur interactives et dynamiques, en permettant la construction de composants réutilisables qui gèrent leur propre état et qui peuvent être combinés pour former des applications web complexes."
     },
