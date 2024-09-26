@@ -1,8 +1,8 @@
 import '../sass/Portfolio.scss'
 import '../sass/_Animation.scss'
 import React, { useState, useEffect, useRef } from 'react'
-
 import projectsData from '../data.json'
+
 
 function Portfolio() {
     const [projects, setProjects] = useState(projectsData)

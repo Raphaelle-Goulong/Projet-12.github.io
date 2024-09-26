@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "tech": "fa-brands fa-html5",
+        "title": "Html5",
+        "description": "HTML est un langage informatique utilisé pour créer et organiser le contenu visuel et structurel des pages web, permettant aux navigateurs internet de lire et d'afficher les informations telles que textes, images, liens et vidéos sur Internet."
+    },
+    {
+        "id": "2",
+        "tech": "fa-brands fa-css3-alt",
+        "title": "Css3",
+        "description": "CSS est un langage de feuilles de style utilisé pour styliser et mettre en forme les éléments HTML d'une page web, contrôlant leur apparence visuelle, leur positionnement et leurs effets."
+    },
+    {
+        "id": "3",
+        "tech": "fa-brands fa-sass",
+        "title": "Sass",
+        "description": "Sass est une extension de CSS qui ajoute des fonctionnalités supplémentaires et rend l'écriture de feuilles de style plus efficace en permettant l'utilisation de variables, de mixins, de fonctions et de structures de contrôle."
+    },
+    {
+        "id": "4",
+        "tech": "fa-brands fa-js",
+        "title": "JavaScript",
+        "description": "JavaScript est un langage de programmation utilisé pour créer des interactions dynamiques sur les pages web, permettant d'ajouter des fonctionnalités telles que des animations, des calculs en temps réel, la manipulation du contenu HTML et la gestion des événements utilisateur."
+    },
+    {
+        "id": "5",
+        "tech": "react.webp",
+        "title": "React",
+        "description": "React est une bibliothèque JavaScript utilisée pour la création d'interfaces utilisateur interactives et dynamiques, en permettant la construction de composants réutilisables qui gèrent leur propre état et qui peuvent être combinés pour former des applications web complexes."
+    },
+    {
+        "id": "6",
+        "tech": "fa-brands fa-php",
+        "title": "php",
+        "description": "PHP est un langage de script côté serveur utilisé pour le développement web, permettant de créer des pages dynamiques et d'interagir avec des bases de données, facilitant ainsi la construction d'applications web robustes et évolutives."
+    },
+    {
+        "id": "7",
+        "tech": "fa-brands fa-symfony",
+        "title": "Symfony",
+        "description": "Symfony est un framework PHP qui facilite le développement d'applications web en offrant des composants réutilisables et une architecture MVC, permettant ainsi de créer des applications performantes et évolutives."
+    }
+]
