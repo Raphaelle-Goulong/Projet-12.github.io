@@ -10,7 +10,6 @@
     background-color: rgba(0, 0, 0, 0.199);
     background-blend-mode: screen;
 
-    // filter: brightness(30%);
     .content_section_contact {
         display: flex;
         justify-content: center;
@@ -18,9 +17,8 @@
         gap: 50px;
         align-items: center;
         z-index: 30;
+        position: absolute;
 
-        // background-color: red;
-        // backdrop-filter: blur(5px);
         .title_section_contact {
             display: flex;
             font-size: 2.5em;
@@ -30,14 +28,14 @@
             font-family: 'Unbounded', sans-serif;
         }
         .btn_contact {
-            width: 150px;
+            width: 210px;
             height: 50px;
-            border-radius: 25px;
+            border-radius: 15px;
             color: rgb(0, 0, 0);
             border: none;
             font-family: 'Unbounded', sans-serif;
             font-size: 0.9em;
-            background: linear-gradient(45deg, #ffffff, #ffffff); // Dégradé de couleurs
+            background-color: #ffffff;
             cursor: pointer;
             transition: transform 0.3s;
             &:hover {
@@ -48,7 +46,7 @@
             }
         }
     }
-   
+
     .contact_modal {
         position: fixed;
         top: 0;
@@ -60,7 +58,7 @@
         justify-content: center;
         align-items: center;
         z-index: 30;
-        animation: 1.5s  slidein;
+        animation: 1.5s slidein;
     }
 
     .contact_file_section {
@@ -82,19 +80,18 @@
             position: relative;
             h3 {
                 margin-top: 20px;
-                font-size: 2em;             
+                font-size: 2em;
             }
-            .Button_close{
+            .Button_close {
                 position: relative;
                 left: 350px;
                 bottom: 30px;
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
-                .fa-x{
+                .fa-x {
                     color: white;
                     font-size: 20px;
-                   
                 }
             }
         }
@@ -117,7 +114,9 @@
                     box-shadow: rgb(102, 101, 101) 0px 4px 12px;
                     transform: scale(1.1);
                 }
-                .fa-envelope,.fa-linkedin,.fa-github{
+                .fa-envelope,
+                .fa-linkedin,
+                .fa-github {
                     font-size: 20px;
                 }
             }
@@ -145,13 +144,13 @@
                 padding: 5px;
             }
             ::placeholder {
-                color: #ffffff; /* Choisissez la couleur que vous souhaitez */
-                opacity: 1; /* Assurez-vous que l'opacité est à 1 pour garantir que la couleur est pleinement visible */
+                color: #ffffff;
+                opacity: 1; 
             }
             input:focus,
             textarea:focus {
                 outline: none; /* Enlève l'outline par défaut */
-                border: none; /* Enlève la bordure */
+                border: none; 
                 font-family: 'Unbounded', sans-serif;
                 background: rgba(8, 8, 8, 0.671);
                 border-bottom: 2px solid #ff8a00;
@@ -162,15 +161,24 @@
             }
             #btn_send {
                 width: 310px;
-                background-color: rgb(255, 251, 251);
+                background-color: #ffffff;
                 color: #ff8a00;
-              
-                
+                height: 50px;
+                border-radius: 15px;
+                font-size: 0.9em;
+           
+            cursor: pointer;
+            transition: transform 0.3s;
+            &:hover {
+                background: linear-gradient(to right, #ff8a00, #e52e71);
+                color: rgb(255, 251, 251);
+                box-shadow: rgb(102, 101, 101) 0px 4px 12px;
+                transform: scale(1.1);
+            }
                 &:hover {
                     background: linear-gradient(to right, #ff8a00, #e52e71);
                     color: rgb(255, 251, 251);
                     box-shadow: rgb(102, 101, 101) 0px 4px 12px;
-                    // transform: scale(1.1);
                 }
             }
         }

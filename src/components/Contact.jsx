@@ -29,8 +29,10 @@ function Contact() {
     }
     return (
         <>
-            <section className="container_section_contact">
+            <section className="container_section_contact"> 
+               
                 <div className="content_section_contact">
+                    
                     <h2 className="title_section_contact">Prêt à travailler ensemble ?</h2>
                     <button className="btn_contact" onClick={openModal}>
                         {' '}
