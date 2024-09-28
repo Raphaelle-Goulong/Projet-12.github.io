@@ -103,3 +103,24 @@
 }
 //  carousel skill
 
+//  Animation présentation
+@keyframes come2life {
+  0% {
+      transform: scale3d(0,0,1) rotate(0.02deg);
+      opacity: 0;
+      filter: blur(10px);
+  }
+  25% {
+      transform: scale3d(1,1,1) rotate(0.02deg);
+      opacity: 1;
+      filter: blur(0px);
+  }
+  40% {
+      opacity: 1;
+      filter: blur(0px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

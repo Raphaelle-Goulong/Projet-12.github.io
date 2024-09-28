@@ -84,7 +84,7 @@
             }
             .Button_close {
                 position: relative;
-                left: 350px;
+                left: 300px;
                 bottom: 30px;
                 background-color: transparent;
                 border: none;
@@ -145,12 +145,12 @@
             }
             ::placeholder {
                 color: #ffffff;
-                opacity: 1; 
+                opacity: 1;
             }
             input:focus,
             textarea:focus {
                 outline: none; /* Enlève l'outline par défaut */
-                border: none; 
+                border: none;
                 font-family: 'Unbounded', sans-serif;
                 background: rgba(8, 8, 8, 0.671);
                 border-bottom: 2px solid #ff8a00;
@@ -166,19 +166,14 @@
                 height: 50px;
                 border-radius: 15px;
                 font-size: 0.9em;
-           
-            cursor: pointer;
-            transition: transform 0.3s;
-            &:hover {
-                background: linear-gradient(to right, #ff8a00, #e52e71);
-                color: rgb(255, 251, 251);
-                box-shadow: rgb(102, 101, 101) 0px 4px 12px;
-                transform: scale(1.1);
-            }
+
+                cursor: pointer;
+                transition: transform 0.3s;
                 &:hover {
                     background: linear-gradient(to right, #ff8a00, #e52e71);
                     color: rgb(255, 251, 251);
                     box-shadow: rgb(102, 101, 101) 0px 4px 12px;
+                    transform: scale(1.1);
                 }
             }
         }

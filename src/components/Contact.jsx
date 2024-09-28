@@ -29,7 +29,7 @@ function Contact() {
     }
     return (
         <>
-            <section className="container_section_contact"> 
+            <section className="container_section_contact" id='Contact'> 
                
                 <div className="content_section_contact">
                     

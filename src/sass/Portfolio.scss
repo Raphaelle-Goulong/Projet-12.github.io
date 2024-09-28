@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    height: 850px;
     z-index: 1;
     overflow: hidden;
     background-image: radial-gradient(circle at center center, transparent 0%, rgb(0, 0, 0) 85%),
@@ -71,19 +71,31 @@
         background-position: inherit;
         z-index: 2; // Placer l'overlay au-dessus de l'image de fond
     }
-    h2 {
+    .title_portfolio {
         display: flex;
-        font-size: 2.5em;
-        color: white;
-        text-shadow: 3px 3px 2px rgb(121, 118, 119);
-        backdrop-filter: blur(5px);
-        font-family: 'Unbounded', sans-serif;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        // background-color: #ff8a00;
         z-index: 3;
-        // background-color: #e52e71;
-        
-        // background-color: #e52e71;
-        margin-bottom: 50px;
+        h2 {
+            font-size: 2.5em;
+            // color: white;
+            // text-shadow: 3px 3px 2px rgb(121, 118, 119);
+            backdrop-filter: blur(5px);
+            font-family: 'Unbounded', sans-serif;
+            background: linear-gradient(
+                to right,
+                #ff8a00,
+                #e52e71
+            ); /* Dégradé de couleur pour le pseudo-élément */
+            -webkit-background-clip: text; /* Permet de clipper le dégradé sur le texte */
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
+
     .container_portfolio_carousel {
         margin-top: 50px;
         position: relative;
@@ -94,7 +106,7 @@
         flex-wrap: wrap;
         width: 100%;
         height: 650px;
-        
+
         .container_cards {
             width: 100%;
             height: 400px;

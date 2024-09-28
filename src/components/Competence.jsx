@@ -5,20 +5,21 @@ import CompetenceData from '../CompetenceData.json'; // Assurez-vous que le chem
 
 function Competence() {
     return (
-        <div className='section_competence'>
-            <h2>Compétences</h2>
+        <div className='section_competence' id='Competence'>
+            <div className="title_competence">
+                <h2>Compétences</h2>
+            </div>
+            
             <div className="carousel_container" id="carousel_container">
                 <div className="carousel">
-                    <ul id="card-list">
+                    <ul id="card_list">
                         {CompetenceData.map((item) => (
                             <li key={item.id}>
-                                <div className="card">
-                                    <article className="test"> 
+                                    <article className="card"> 
                                         <i className={item.tech}></i> 
                                         <span className="model-name">{item.title}</span>
                                         <TextWithToggle description={item.description} />
                                     </article>
-                                </div>
                             </li>
                         ))}
                     </ul>

@@ -46,8 +46,11 @@ function Portfolio() {
 
     return (
         <>
-            <section className="section_container_portfolio">
-                {/* Carousel */}<h2>Portfolio</h2>
+            <section className="section_container_portfolio " id='Portfolio'>
+                <div className="title_portfolio">
+                    <h2>Portfolio</h2>
+                </div>
+                {/* Carousel */}
                 <div className="container_portfolio_carousel">
                     
                     <div className="container_cards">
