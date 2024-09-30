@@ -3,61 +3,111 @@
     display: flex;
     justify-content: center;
     height: 600px;
-    background-image: linear-gradient(135deg, transparent 0%, transparent 50%,rgba(159, 159, 159,0.07) 50%, rgba(159, 159, 159,0.07) 77%,transparent 77%, transparent 100%),linear-gradient(90deg, transparent 0%, transparent 91%,rgba(159, 159, 159,0.07) 91%, rgba(159, 159, 159,0.07) 99%,transparent 99%, transparent 100%),linear-gradient(135deg, transparent 0%, transparent 24%,rgba(159, 159, 159,0.07) 24%, rgba(159, 159, 159,0.07) 63%,transparent 63%, transparent 100%),linear-gradient(0deg, transparent 0%, transparent 49%,rgba(159, 159, 159,0.07) 49%, rgba(159, 159, 159,0.07) 63%,transparent 63%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));    
+    background-image: linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 50%,
+            rgba(159, 159, 159, 0.07) 50%,
+            rgba(159, 159, 159, 0.07) 77%,
+            transparent 77%,
+            transparent 100%
+        ),
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            transparent 91%,
+            rgba(159, 159, 159, 0.07) 91%,
+            rgba(159, 159, 159, 0.07) 99%,
+            transparent 99%,
+            transparent 100%
+        ),
+        linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 24%,
+            rgba(159, 159, 159, 0.07) 24%,
+            rgba(159, 159, 159, 0.07) 63%,
+            transparent 63%,
+            transparent 100%
+        ),
+        linear-gradient(
+            0deg,
+            transparent 0%,
+            transparent 49%,
+            rgba(159, 159, 159, 0.07) 49%,
+            rgba(159, 159, 159, 0.07) 63%,
+            transparent 63%,
+            transparent 100%
+        ),
+        linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
     color: white;
+    @media (max-width: 768px) {
+    }
     .text_section_presentation {
         display: flex;
         width: 100%;
         align-items: center;
         flex-direction: column;
-        .title_presentation{
+
+        .title_presentation {
             display: flex;
             justify-content: center;
             h2 {
-            font-size: 2.5em;
-            color: white;
-            font-family: 'Unbounded', sans-serif; 
-            padding-top: 50px;
-            background: linear-gradient(
-                to right,
-                #ff8a00,
-                #e52e71
-            ); /* Dégradé de couleur pour le pseudo-élément */
-            -webkit-background-clip: text; /* Permet de clipper le dégradé sur le texte */
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+                font-size: 2.5em;
+                color: white;
+                font-family: 'Unbounded', sans-serif;
+                padding-top: 50px;
+                background: linear-gradient(
+                    to right,
+                    #ff8a00,
+                    #e52e71
+                ); /* Dégradé de couleur pour le pseudo-élément */
+                -webkit-background-clip: text; /* Permet de clipper le dégradé sur le texte */
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                @media (max-width: 768px) {
+                    // width: 100%;
+                    font-size: 1.9rem;
+                }
+            }
         }
-        }
-        
-        .text_presentation{
+
+        .text_presentation {
             display: flex;
             justify-content: center;
             align-items: center;
             font-weight: bold;
-            font-size: 36px;
+            // font-size: 36px;
             position: relative;
             overflow: hidden;
-      
-        p {
-            margin-top: 110px;
-            font-size: 1.5rem;
-            // font-family: 'Mukta', sans-serif;
-            text-align: center;
-            width: 900px;
-            position: relative;
-            backface-visibility: hidden;
-            opacity: 1; /* modification de la propriété opacity */
-            animation: come2life linear 10s;
-            line-height: 40px; 
-            font-family: "Anek Latin", sans-serif;
-            
+            width: 50%;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+            p {
+                margin-top: 110px;
+                font-size: 1.5rem;
+                // font-family: 'Mukta', sans-serif;
+                text-align: center;
+                // width: 900px;
+                position: relative;
+                backface-visibility: hidden;
+                opacity: 1; /* modification de la propriété opacity */
+                animation: come2life linear 10s;
+                line-height: 40px;
+                font-family: 'Anek Latin', sans-serif;
+                @media (max-width: 768px) {
+                    // width: 100%;
+                    font-size: 0.9rem;
+                    padding: 10px;
+                    margin-top: 50px;
+                }
+            }
+            .text_presentation > p:nth-child(1) {
+                left: 30vw;
+                top: 30vh;
+                animation-delay: 0s;
+            }
         }
-        .text_presentation > p:nth-child(1) {
-            left: 30vw;
-            top: 30vh;
-            animation-delay: 0s;
-        }
-       
-    }
     }
 }

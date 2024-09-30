@@ -2,7 +2,7 @@
 //     width: 100%;
 //     height: auto;
 //     background-color: #444444;
-   
+
 // }
 .container_section_home {
     //background-color: red;
@@ -14,40 +14,49 @@
     background-size: cover; // Pour couvrir toute la section
     background-position: center; // Pour centrer l'image
     color: white;
-  
+    @media (max-width: 768px) {
+       
+    }
     .titles_section_home {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 20px;
-        
-  
+        @media (max-width: 768px) {
+            // font-size: 1.0em;
+            padding: 5px;
+        }
         h2 {
-            font-family: "Unbounded", sans-serif;
+            font-family: 'Unbounded', sans-serif;
             font-size: 3.5em;
-  
+            @media (max-width: 768px) {
+                font-size: 2.0em; 
+            }
             span {
-                background: linear-gradient(to right, #ff8a00, #e52e71); /* Dégradé de couleur pour le pseudo-élément */
+                background: linear-gradient(
+                    to right,
+                    #ff8a00,
+                    #e52e71
+                ); /* Dégradé de couleur pour le pseudo-élément */
                 -webkit-background-clip: text; /* Permet de clipper le dégradé sur le texte */
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
-  
+
         h3 {
-            font-family: "Mukta Vaani", sans-serif;
+            font-family: 'Mukta Vaani', sans-serif;
             font-size: 2.5em;
             .changing-letter {
-                  display: inline-block;
-                  opacity: 0;
-                  animation: fadeIn 1s forwards;
-                  color: #ff8a00; /* Rendre le texte transparent */
-                  // -webkit-text-fill-color: transparent; /* Rendre le texte transparent */
-                  // background: linear-gradient(to right, #ff8a00, #e52e71); /* Dégradé de couleur pour les lettres */
-                  // background-clip: text; /* Clipper le dégradé sur les lettres */
-                  // -webkit-background-clip: text; /* Clipper le dégradé sur les lettres pour Webkit */
-              }
+                display: inline-block;
+                opacity: 0;
+                animation: fadeIn 1s forwards;
+                color: #ff8a00; /* Rendre le texte transparent */
+                // -webkit-text-fill-color: transparent; /* Rendre le texte transparent */
+                // background: linear-gradient(to right, #ff8a00, #e52e71); /* Dégradé de couleur pour les lettres */
+                // background-clip: text; /* Clipper le dégradé sur les lettres */
+                // -webkit-background-clip: text; /* Clipper le dégradé sur les lettres pour Webkit */
+            }
         }
     }
-  }
-  
+}

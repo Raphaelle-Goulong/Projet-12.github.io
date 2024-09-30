@@ -65,7 +65,7 @@ function Home() {
 
     return (
         <>
-            <section className="container_section_home"id="Home" >
+            <section className="container_section_home" id="Home">
                 <div className="titles_section_home">
                     <h2>Hello World !</h2>
                     <h2>
@@ -86,22 +86,17 @@ function Home() {
                 </div>
             </section>
             <section id="Presentation">
-            <Presentation />
+                <Presentation />
             </section>
             <section id="Competence ">
-            <Competence />
+                <Competence />
             </section>
             <section id="Portfolio ">
-            <Portfolio />
+                <Portfolio />
             </section>
             <section id="Contact ">
-            <Contact />
+                <Contact />
             </section>
-
-            
-            
-            
-           
         </>
     )
 }

@@ -1,12 +1,36 @@
 import '../sass/Header.scss'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { useState } from 'react'
 
 function Header() {
+    // État pour contrôler l'ouverture et la fermeture du menu
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    // Fonction qui bascule l'état d'ouverture du menu
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
+
     return (
         <>
             <div className="navbar">
                 <h1 className="title_navbar">R.Goulong</h1>
-                <nav className="section_li_navbar">
+                
+                {/* Bouton hamburger */}
+                <div className="container_button_hamburger">
+                    <div
+                        id="button_hamburger"
+                        className={menuOpen ? 'open' : ''}
+                        onClick={toggleMenu}
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                
+                {/* Navigation avec overlay */}
+                <nav className={`section_li_navbar ${menuOpen ? 'open' : ''}`}>
                     <ul className="home_section_navbar">
                         <li className="link_section">
                             <a href="#Home" alt="Accueil">
