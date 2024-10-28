@@ -1,11 +1,15 @@
-.section_footer{
+.section_footer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70px;
-    background-color: rgb(11, 10, 10) ;
-    .title_footer{
+    background-color: rgb(11, 10, 10);
+    .title_footer {
         color: white;
-        font-family: "Unbounded", sans-serif;
+        font-family: 'Unbounded', sans-serif;
+    }
+    @media (max-width: 768px) {
+        font-size: 0.9rem;
+        text-align: center;
     }
 }

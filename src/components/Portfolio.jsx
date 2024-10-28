@@ -3,7 +3,6 @@ import '../sass/_Animation.scss'
 import React, { useState, useEffect, useRef } from 'react'
 import projectsData from '../data.json'
 
-
 function Portfolio() {
     const [projects, setProjects] = useState(projectsData)
     const [currentProject, setCurrentProject] = useState(0)
@@ -46,13 +45,12 @@ function Portfolio() {
 
     return (
         <>
-            <section className="section_container_portfolio " id='Portfolio'>
+            <section className="section_container_portfolio " id="Portfolio">
                 <div className="title_portfolio">
                     <h2>Portfolio</h2>
                 </div>
                 {/* Carousel */}
                 <div className="container_portfolio_carousel">
-                    
                     <div className="container_cards">
                         {/* left card*/}
                         <article className="cards left_cards" onClick={prevProject}>

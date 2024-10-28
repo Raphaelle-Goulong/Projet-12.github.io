@@ -11,7 +11,7 @@
     .section-Title-error {
         display: flex;
     }
-    .loading{
+    .loading {
         display: flex;
         font-size: 18em;
         font-weight: 700;
@@ -43,7 +43,7 @@
     .loading {
         margin: 2px;
         animation-name: loading;
-        animation: loading 2.0s linear infinite;
+        animation: loading 2s linear infinite;
     }
 
     .loading:nth-child(1) {
@@ -57,16 +57,16 @@
     }
     //animation chargement
 
-    //animation au chargement de la page 
+    //animation au chargement de la page
 
     .bounce-in-right {
-        animation: bounce-in-right 2.5s ease-in-out ;
+        animation: bounce-in-right 2.5s ease-in-out;
     }
-    //animation au chargement de la page 
+    //animation au chargement de la page
     //animation balancement du chiffre 4
     .hinge {
-        animation: hinge 5.0s ease infinite;
-      }
+        animation: hinge 5s ease infinite;
+    }
     //animation balancement du chiffre 4
 
     .Link-error {
@@ -80,7 +80,7 @@
         text-decoration: none;
         box-shadow: rgb(102, 101, 101) 0px 4px 12px;
         &:hover {
-            transform: scale(1.1); 
+            transform: scale(1.1);
             z-index: 2;
         }
         // color: #f66c6c;

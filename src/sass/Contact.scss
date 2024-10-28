@@ -10,7 +10,7 @@
     background-color: rgba(0, 0, 0, 0.199);
     background-blend-mode: screen;
     @media (max-width: 768px) {
-        height: 500px;   
+        height: 800px;
     }
     .content_section_contact {
         display: flex;
@@ -18,7 +18,7 @@
         flex-direction: column;
         gap: 50px;
         align-items: center;
-        z-index: 30;
+        // z-index: 30;
         position: absolute;
 
         .title_section_contact {
@@ -31,10 +31,9 @@
             @media (max-width: 768px) {
                 // width: 100%;
                 font-size: 1.2rem;
-                align-items:center ;
+                align-items: center;
                 justify-content: center;
             }
-
         }
         .btn_contact {
             width: 210px;
@@ -55,10 +54,8 @@
             }
             @media (max-width: 768px) {
                 width: 150px;
-            height: 40px;
-                
+                height: 40px;
             }
-
         }
     }
 
@@ -72,147 +69,151 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 30;
+        z-index: 1025;
         animation: 1.5s slidein;
-    }
-
-    .contact_file_section {
-        width: 50%;
-        background-color: rgba(146, 145, 145, 0.184);
-        padding: 20px;
-        color: white;
-        font-family: 'Unbounded', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        backdrop-filter: blur(7px);
-        gap: 50px;
-        padding: 50px 0px;
-        border-radius: 15px;
         @media (max-width: 768px) {
             width: 100%;
         }
-        .top_section_contact {
-            display: flex;
-            position: relative;
-            h3 {
-                margin-top: 20px;
-                font-size: 2em;
-                
-            }
-            .Button_close {
-                position: relative;
-                left: 300px;
-                bottom: 30px;
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-                .fa-x {
-                    color: white;
-                    font-size: 20px;
-                }
-                @media (max-width: 768px) {
-                left: 50px;
-                   
-                }
-            }
-        }
-        .contact_social_media {
-            display: flex;
-            gap: 70px;
-            @media (max-width: 768px) {
-                gap: 30px;
-            
-            }
-            .link_social {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 60px;
-                height: 60px;
-                border-radius: 50px;
-                background-color: #000000cc;
-                border: 1px solid #ff8a00;
-                color: white;
-                &:hover {
-                    background-color: #ffffffd9;
-                    color: rgb(7, 7, 7);
-                    box-shadow: rgb(102, 101, 101) 0px 4px 12px;
-                    transform: scale(1.1);
-                }
-                .fa-envelope,
-                .fa-linkedin,
-                .fa-github {
-                    font-size: 20px;
-                }
-            }
-        }
-        .form_section_contact {
-            width: 100%;
+        .contact_file_section {
+            width: 50%;
+            background-color: rgba(146, 145, 145, 0.184);
+            padding: 20px;
+            color: white;
+            font-family: 'Unbounded', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: 20px;
+            backdrop-filter: blur(7px);
+            gap: 50px;
+            padding: 50px 0px;
+            border-radius: 15px;
             @media (max-width: 768px) {
-            width: 50%;
-            }
-           
-            input {
-                font-family: 'Unbounded', sans-serif;
-            }
-            .input_contact {
-                width: 300px;
-                height: 30px;
-                font-family: 'Unbounded', sans-serif;
-                background-color: #cc282800;
-                border: none;
-                border-bottom: 1px solid;
-                color: white;
-                backdrop-filter: blur(6px);
-                border-radius: 5px;
-                padding: 5px;
-                @media (max-width: 768px) {
-                    width: 280px;
-                }
-            }
-            ::placeholder {
-                color: #ffffff;
-                opacity: 1;
-            }
-            input:focus,
-            textarea:focus {
-                outline: none; /* Enlève l'outline par défaut */
-                border: none;
-                font-family: 'Unbounded', sans-serif;
-                background: rgba(8, 8, 8, 0.671);
-                border-bottom: 2px solid #ff8a00;
-            }
-            #message {
-                width: 300px;
-                height: 150px;
-                @media (max-width: 768px) {
-                    width: 280px;
-                }
-            }
-            #btn_send {
-                width: 310px;
-                background-color: #ffffff;
-                color: #ff8a00;
-                height: 50px;
+                width: 100%;
                 border-radius: 15px;
-                font-size: 0.9em;
-                cursor: pointer;
-                transition: transform 0.3s;
-                @media (max-width: 768px) {
-                    width: 280px;
+            }
+            @media (max-width: 1024px) {
+                // width: 100%;
+                border-radius: 15px;
+            }
+            .top_section_contact {
+                display: flex;
+                position: relative;
+                h3 {
+                    margin-top: 20px;
+                    font-size: 2em;
                 }
-                &:hover {
-                    background: linear-gradient(to right, #ff8a00, #e52e71);
-                    color: rgb(255, 251, 251);
-                    box-shadow: rgb(102, 101, 101) 0px 4px 12px;
-                    transform: scale(1.1);
+                .Button_close {
+                    position: absolute;
+                    left: 400px;
+                    bottom: 30px;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    .fa-x {
+                        color: white;
+                        font-size: 20px;
+                    }
+                    @media (max-width: 1024px) {
+                        left: 200px;
+                    }
+                }
+            }
+            .contact_social_media {
+                display: flex;
+                gap: 70px;
+                @media (max-width: 768px) {
+                    gap: 30px;
+                }
+                .link_social {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50px;
+                    background-color: #000000cc;
+                    border: 1px solid #ff8a00;
+                    color: white;
+                    &:hover {
+                        background-color: #ffffffd9;
+                        color: rgb(7, 7, 7);
+                        box-shadow: rgb(102, 101, 101) 0px 4px 12px;
+                        transform: scale(1.1);
+                    }
+                    .fa-envelope,
+                    .fa-linkedin,
+                    .fa-github {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .form_section_contact {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+                @media (max-width: 768px) {
+                    width: 50%;
+                }
+
+                input {
+                    font-family: 'Unbounded', sans-serif;
+                }
+                .input_contact {
+                    width: 300px;
+                    height: 30px;
+                    font-family: 'Unbounded', sans-serif;
+                    background-color: #cc282800;
+                    border: none;
+                    border-bottom: 1px solid;
+                    color: white;
+                    backdrop-filter: blur(6px);
+                    border-radius: 5px;
+                    padding: 5px;
+                    @media (max-width: 768px) {
+                        width: 280px;
+                    }
+                }
+                ::placeholder {
+                    color: #ffffff;
+                    opacity: 1;
+                }
+                input:focus,
+                textarea:focus {
+                    outline: none; /* Enlève l'outline par défaut */
+                    border: none;
+                    font-family: 'Unbounded', sans-serif;
+                    background: rgba(8, 8, 8, 0.671);
+                    border-bottom: 2px solid #ff8a00;
+                }
+                #message {
+                    width: 300px;
+                    height: 150px;
+                    @media (max-width: 768px) {
+                        width: 280px;
+                    }
+                }
+                #btn_send {
+                    width: 310px;
+                    background-color: #ffffff;
+                    color: #ff8a00;
+                    height: 50px;
+                    border-radius: 15px;
+                    font-size: 0.9em;
+                    cursor: pointer;
+                    transition: transform 0.3s;
+                    @media (max-width: 768px) {
+                        width: 280px;
+                    }
+                    &:hover {
+                        background: linear-gradient(to right, #ff8a00, #e52e71);
+                        color: rgb(255, 251, 251);
+                        box-shadow: rgb(102, 101, 101) 0px 4px 12px;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }

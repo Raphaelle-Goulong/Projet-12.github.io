@@ -7,6 +7,7 @@ import Competence from '../components/Competence'
 
 // Ensemble de caractères pour générer des lettres aléatoires
 const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+
 function Home() {
     // Le texte final à afficher
     const finalText = 'Développeuse' + '  ' + 'Web'
@@ -69,7 +70,7 @@ function Home() {
                 <div className="titles_section_home">
                     <h2>Hello World !</h2>
                     <h2>
-                        Je suis <span>Raphaelle Goulong</span>
+                        Je suis <span>Raphaëlle Goulong</span>
                     </h2>
                     <h3 className="animated-text">
                         {displayText.map((char, index) => (

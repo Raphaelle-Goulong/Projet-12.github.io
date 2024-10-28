@@ -1,11 +1,4 @@
-// .section_container_home{
-//     width: 100%;
-//     height: auto;
-//     background-color: #444444;
-
-// }
 .container_section_home {
-    //background-color: red;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -15,7 +8,7 @@
     background-position: center; // Pour centrer l'image
     color: white;
     @media (max-width: 768px) {
-       
+        align-items: center;
     }
     .titles_section_home {
         display: flex;
@@ -23,14 +16,13 @@
         flex-direction: column;
         gap: 20px;
         @media (max-width: 768px) {
-            // font-size: 1.0em;
-            padding: 5px;
+            padding: 15px;
         }
         h2 {
             font-family: 'Unbounded', sans-serif;
             font-size: 3.5em;
             @media (max-width: 768px) {
-                font-size: 2.0em; 
+                font-size: 2em;
             }
             span {
                 background: linear-gradient(

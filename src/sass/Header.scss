@@ -1,77 +1,70 @@
 .navbar {
     width: 100%;
     height: 60px;
-    background-color: rgba(13, 10, 10, 0); /* Couleur de fond de la navbar */
+    background-color: rgba(13, 10, 10, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.526) 0px 3px 8px;
     position: fixed;
-    z-index: 5;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* S'assurer que la barre de navigation reste au-dessus du contenu */
+
     @media (max-width: 768px) {
-        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.705);
+        box-shadow: rgba(0, 0, 0, 0) 0px;
     }
+
     .title_navbar {
         color: white;
         margin-left: 20px;
         font-size: 1.6em;
         font-family: 'Unbounded', sans-serif;
+
         @media (max-width: 768px) {
-            display: none; 
+            display: none;
         }
     }
 
     .container_button_hamburger {
-        display: none; 
+        display: none;
+
         @media (max-width: 768px) {
-            display: flex; 
+            display: flex;
             padding-left: 10px;
+            z-index: 1100; /* Assurer que le bouton est au-dessus du contenu */
         }
+
         #button_hamburger {
-            z-index: 5;
+            z-index: 1100;
             width: 60px;
             height: 45px;
             position: relative;
             margin: 50px auto;
-            -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
             transform: rotate(0deg);
-            -webkit-transition: 0.5s ease-in-out;
-            -moz-transition: 0.5s ease-in-out;
-            -o-transition: 0.5s ease-in-out;
             transition: 0.5s ease-in-out;
             cursor: pointer;
-            // 
+
             span {
                 display: block;
                 position: absolute;
                 height: 6px;
-                width: 40px;              
+                width: 40px;
                 background: #d3531a;
                 border-radius: 9px;
                 opacity: 1;
                 left: 0;
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-                -webkit-transition: 0.25s ease-in-out;
-                -moz-transition: 0.25s ease-in-out;
-                -o-transition: 0.25s ease-in-out;
                 transition: 0.25s ease-in-out;
-                
             }
 
             span:nth-child(1) {
                 top: 0px;
             }
-
             span:nth-child(2),
             span:nth-child(3) {
                 top: 18px;
             }
-
             span:nth-child(4) {
                 top: 36px;
             }
@@ -83,16 +76,10 @@
             }
 
             &.open span:nth-child(2) {
-                -webkit-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                -o-transform: rotate(45deg);
                 transform: rotate(45deg);
             }
 
             &.open span:nth-child(3) {
-                -webkit-transform: rotate(-45deg);
-                -moz-transform: rotate(-45deg);
-                -o-transform: rotate(-45deg);
                 transform: rotate(-45deg);
             }
 
@@ -106,92 +93,84 @@
 
     .section_li_navbar {
         color: white;
+
         @media (max-width: 768px) {
-            display: none; // Affiche le bouton hamburger en mobile
+            display: none;
+
             &.open {
-                display: block; // Affiche la navigation lorsque le menu est ouvert
-                position: absolute;
-                top: 60px;
+                display: flex;
+                position: fixed;
+                top: 0;
                 left: 0;
-                width: 50%;
-                background-color: rgba(0, 0, 0, 0.9); // Overlay en mobile
-                text-align: center;
-                padding: 20px 0;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.8);
+                backdrop-filter: blur(7px);
+                z-index: 1050; /* Assurer que le menu est au-dessus de tout le reste */
+
+                .home_section_navbar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0);
+                }
             }
         }
+
         .home_section_navbar {
             display: flex;
             gap: 40px;
-            font-family: 'Unbounded', sans-serif; /* Police de caractères pour les liens */
-            font-size: 1em; /* Taille de la police pour les liens */
+            font-family: 'Unbounded', sans-serif;
+            font-size: 1em;
             margin-right: 20px;
+
             @media (max-width: 768px) {
                 width: 50%;
                 height: 100%;
-                background-color: rgba(145, 21, 21, 0.698);
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-                z-index: 6;
+                z-index: 1060; /* Assurer que les liens du menu sont visibles */
             }
+
             li {
-                position: relative; /* Ajout de la position relative pour les liens */
+                position: relative;
             }
 
             .link_section a {
-                text-decoration: none; /* Suppression du soulignement des liens */
-                color: rgb(255, 255, 255); /* Couleur initiale du texte des liens */
+                text-decoration: none;
+                color: rgb(255, 255, 255);
 
                 &:hover {
-                    color: rgba(255, 255, 255, 0.26); /* Couleur du texte des liens au survol */
+                    color: rgba(255, 255, 255, 0.26);
                 }
 
                 &:before {
-                    position: absolute; /* Positionnement absolu pour le pseudo-élément :before */
-                    background: linear-gradient(
-                        to right,
-                        #ff8a00,
-                        #e52e71
-                    ); /* Dégradé de couleur pour le pseudo-élément */
-                    -webkit-background-clip: text; /* Permet de clipper le dégradé sur le texte */
+                    position: absolute;
+                    background: linear-gradient(to right, #ff8a00, #e52e71);
                     background-clip: text;
-                    -webkit-text-fill-color: transparent; /* Rend le texte transparent */
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                     top: 0px;
                     left: 0px;
                     z-index: 3;
                     overflow: hidden;
-                    content: attr(alt); /* Contenu du pseudo-élément */
-                    transition: all 0.3s; /* Transition pour l'animation */
-                    transform: scale(0.8); /* Réduction de la taille du pseudo-élément */
-                    opacity: 0; /* Opacité initiale à 0 pour le pseudo-élément */
+                    content: attr(alt);
+                    transition: all 0.3s;
+                    transform: scale(0.8);
+                    opacity: 0;
                 }
 
                 &:hover:before {
-                    transform: scale(1.2); /* Augmente la taille du pseudo-élément au survol */
-                    opacity: 1; /* Rend le pseudo-élément visible au survol */
+                    transform: scale(1.2);
+                    opacity: 1;
                 }
             }
         }
     }
-
-    // @media (max-width: 768px) {
-    //     .container_button_hamburger {
-    //         display: block; // Affiche le bouton hamburger en mobile
-    //     }
-
-    //     .section_li_navbar {
-    //         display: none; // Cache la navigation par défaut sur mobile
-
-    //         &.open {
-    //             display: block; // Affiche la navigation lorsque le menu est ouvert
-    //             position: absolute;
-    //             top: 60px;
-    //             left: 0;
-    //             width: 100%;
-    //             background-color: rgba(0, 0, 0, 0.9); // Overlay en mobile
-    //             text-align: center;
-    //             padding: 20px 0;
-    //         }
-    //     }
-    // }
 }
