@@ -47,7 +47,7 @@ function Header() {
                             </a>
                         </li>
                         <li className="link_section">
-                            <a href="#Competence" alt="Compétence" onClick={closeMenu}>
+                            <a href="#Competence" alt="Compétences" onClick={closeMenu}>
                                 Compétences
                             </a>
                         </li>
